@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffalo Chicken Wings</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: brown;
+      border: 3px solid;
+      padding: 5px;
+      font-size: 38px;
+      border-radius: 6px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      text-align: center;
+      color: rgb(227, 63, 63);
+      margin-top: 0 auto;
+      font-size: 26px;
+    }
+    img {
+      display: block;
+      margin: 20px auto 50px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .youtube {
+      display: block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: red;
+    }
+    .youtube:hover {
+      text-decoration: underline;
+    }
+    ul {
+      line-height: 1.5px;
+      text-align: left;
+      color: brown;
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background: bisque;
+      color: rgb(135, 40, 40);
+      font-size: 20px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+      opacity: 0.75;
+      cursor: pointer;
+    }
+    .signature {
+      text-align: center;
+    }
+    .block1 {
+      background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/720/original/R.jpg?1676407264);
+    }
+    .block2 {
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 10px;
+      background-image: radial-gradient(
+        circle at 10% 20%,
+        rgb(130, 218, 47) 0.1%,
+        rgba(207, 235, 132, 0.689) 90%
+      );
+
+      width: 50%;
+      margin: 10px auto;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+  </style>
+  <body>
+    <div class="block1">
+      <div class="block2">
+        <h1>Buffalo Chicken Wings</h1>
+        <h2>Made Easy in the Oven</h2>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/698/original/Wings.jpg?1676395779"
+          alt="Classic recipe"
+        />
+        <ul>
+          <li>
+            <h3>2 lb. chicken wings</h3>
+          </li>
+          <li>
+            <h3>2 tbsp. vegetable oil</h3>
+          </li>
+          <li>
+            <h3>1 tsp. garlic powder</h3>
+          </li>
+          <li>
+            <h3>Kosher salt</h3>
+          </li>
+          <li>
+            <h3>Freshly ground black pepper</h3>
+          </li>
+          <li>
+            <h3>1/4 c. hot sauce (such as Frank's)</h3>
+          </li>
+          <li>
+            <h3>2 tbsp. honey</h3>
+          </li>
+          <li>
+            <h3>4 tbsp. butter</h3>
+          </li>
+          <li>
+            <h3>Ranch dressing, for serving</h3>
+          </li>
+          <li>
+            <h3>Carrot sticks, for serving</h3>
+          </li>
+          <li>
+            <h3>Celery sticks, for serving</h3>
+          </li>
+        </ul>
+        <hr />
+        <a
+          href="https://www.youtube.com/watch?v=ze39mtufeNE"
+          target="_blank"
+          class="youtube"
+        >
+          Check out this video on Youtube
+        </a>
+        <br />
+        <button><strong>Cook It Today 👩🏻‍🍳</strong></button>
+        <p class="signature">
+          This page was built by
+          <a href="https://www.linkedin.com/in/olga-kisilova/" target="_blank">
+            Olga K.
+          </a>
+        </p>
+      </div>
+    </div>
+    <script>
+      function YourMail() {
+        let email = prompt(
+          "I would be happy to send you this recipe, if you leave me your email 😀"
+        );
+
+        if (email.length > 0) {
+          alert(`The recipe was sent to ${email}. Happy cooking 👩🏻‍🍳!`);
+        } else {
+          alert(`Thank you for stopping by!`);
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", YourMail);
+    </script>
+  </body>
+</html>
